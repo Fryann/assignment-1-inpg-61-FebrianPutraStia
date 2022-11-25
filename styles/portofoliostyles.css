@@ -3,46 +3,58 @@ body{
     padding:0%;
 }
 
+#container-fluid {
+    background-color: rgb(0, 0, 0);
+    padding: 5%;
+}
+
+#container-fluid2 {
+    background-color: rgb(0, 0, 0);
+    padding: 0% 5% 5% 5%;
+}
+
+
 .Paragraf{
-    Background-color:rgb(0, 0, 0);
+    Background-color:rgb(32, 32, 32);
     height:5%;
     display:flex;
     flex-direction: row;
+    padding: 0% !important;
+    box-shadow: 20px 20px 10px rgba(255, 166,0, 0.75);
 }
 
 .jumbo1{
     background-color: rgba(255, 166, 0, 0.7);
     border-radius: 50%;
-    width: 220px;
-    height: 220px;
+    width: 17%;
+    height: 17%;
     display:flex;
-    padding:0;
+    padding:1%;
     margin-top: 5% !important;
     margin-bottom: 5% !important;
-    margin-left:1% !important;
+    margin-left:5% !important;
     margin-right:1% !important;
 }
 
 .jumbo2{
     background-color: rgba(255, 166, 0, 0.5);
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: auto;
+    height: auto;
     display:flex;
-    padding:0;
-    margin: 5%;
+    padding:7%;
+    align-content: center;
 }
 
 .img-fluid{
     width:auto;
     height:auto;
     display:flex;
-    margin:5%;
+    align-content: center;
 }
 
 .border-img1{
     border: 15px solid rgb(255, 166, 0) !important;
-    padding:0;
 }
 
 h1{
@@ -68,12 +80,12 @@ p{
     justify-content: left;
 }
 
-#lokasi{
+#text-lokasi{
     display:inline-flex !important;
     padding: 0;
 }
 
-#email{
+#text-email{
     display:inline-flex !important;
 }
 
@@ -85,18 +97,19 @@ p{
     text-align: left;
 }
 
-#nama{
+#text-nama{
     color:orange;
     display:inline-flex;
 }
 
-#Job1{
+#text-role{
     color:white !important;
     display:inline-flex;
     margin-top:5% !important;
+    font-weight: bold;
 }
 
-.btn-kontak{
+#btn-edit{
     margin-top:7%;
     margin-bottom:0%;
     background-color:orange !important;
@@ -106,7 +119,7 @@ p{
     color:black!important;
 }
 
-.btn-resume{
+#btn-resume{
     margin-top:7%;
     margin-bottom:0%;
     background-color: gray !important;
@@ -116,7 +129,7 @@ p{
     border:none !important;
 }
 
-.btn-submit{
+#btn-submit{
     background-color: orange !important;
     outline-color:none !important;
     border-color: none !important;
