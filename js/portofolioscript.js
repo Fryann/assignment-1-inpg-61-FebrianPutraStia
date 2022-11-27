@@ -37,8 +37,12 @@ btnEdit.addEventListener('click', function(event){
 
 btnSubmit.addEventListener('click', function (event){
     event.preventDefault()
-    let konfirmasi = confirm ('Apakah yakin ingin merubah data?')
-    if(konfirmasi == true){
+    if (inputNama.value == "" || inputRole.value == "" || inputAvailability.value == "" || inputUsia.value == "" || inputLokasi.value == "" || inputPengalaman.value == "" || inputEmail.value == ""){
+        alert('Silahkan lengkapi form terlebih dahulu.')
+        formData.style.display = 'block'
+    } else {
+        let konfirmasi = confirm ('Apakah yakin ingin merubah data?')
+        if(konfirmasi == true){
         textNama.innerHTML = inputNama.value
         textRole.innerHTML = inputRole.value
         textAvailability.innerHTML = inputAvailability.value
@@ -46,6 +50,9 @@ btnSubmit.addEventListener('click', function (event){
         textLokasi.innerHTML = inputLokasi.value
         textPengalaman.innerHTML = inputPengalaman.value
         textEmail.innerHTML = inputEmail.value
+        formData.style.display = 'none'
+        } else {
+        formData.style.display = 'block'
+        }
     }
-    formData.style.display = 'none'
 })
